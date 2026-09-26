@@ -1,0 +1,240 @@
+{
+  "last_updated": "2026-09-26",
+  "currency_base": "USD",
+  "brokers": [
+    {
+      "id": "amarkets",
+      "name": "AMarkets",
+      "established": 2007,
+      "regulation": "FSA (St. Vincent), Financial Commission (Category A - €20,000 Insurance)",
+      "regulation_tier": "Tier-3 + Private Insurance",
+      "iran_friendly": true,
+      "kyc_required_for_trade": true,
+      "accepts_national_id": true,
+      "min_deposit_usd": 100,
+      "max_leverage": "1:3000",
+      "platforms": ["MetaTrader 4", "MetaTrader 5", "AMarkets App"],
+      "account_types": {
+        "standard": {"min_dep": 100, "spread_eurusd": 1.3, "commission_per_lot": 0.0},
+        "ecn": {"min_dep": 200, "spread_eurusd": 0.2, "commission_per_lot": 5.0},
+        "crypto": {"min_dep": 10, "spread_eurusd": 1.6, "commission_per_lot": 0.0}
+      },
+      "average_spreads": {
+        "EURUSD": 0.2,
+        "GBPUSD": 0.5,
+        "USDJPY": 0.3,
+        "XAUUSD": 1.8,
+        "BTCUSD": 25.0
+      },
+      "swap_free": {
+        "available": true,
+        "duration_days": 14,
+        "conditions": "Available on Standard & ECN upon support request (excluding crypto & exotics)"
+      },
+      "payment_methods": ["TopChange (TC Pay)", "Direct IRR Exchange", "Tether (TRC20/ERC20)", "Bitcoin", "Perfect Money"],
+      "rial_deposit_fee": "0%",
+      "rial_withdrawal_speed_hours": "1-3",
+      "copy_trading": "AMarkets RAMM Copy Trading",
+      "server_locations": ["London (LD4)", "Frankfurt"],
+      "avg_ping_iran_ms": 110,
+      "rating_overall": 9.4,
+      "pros": [
+        "Financial Commission insurance up to €20,000 per client",
+        "Fastest direct IRR deposit and withdrawal via TopChange with 0% fee",
+        "Raw ECN spreads starting from 0.0 pips on EURUSD and Gold",
+        "Excellent 24/7 Persian support team"
+      ],
+      "cons": [
+        "High minimum deposit for ECN ($200)",
+        "Swap-free period limited to 14 days on selected pairs"
+      ]
+    },
+    {
+      "id": "alpari",
+      "name": "Alpari",
+      "established": 1998,
+      "regulation": "FSC (Mauritius), Financial Commission",
+      "regulation_tier": "Tier-3 + Industry Veteran",
+      "iran_friendly": true,
+      "kyc_required_for_trade": true,
+      "accepts_national_id": true,
+      "min_deposit_usd": 1,
+      "max_leverage": "1:1000",
+      "platforms": ["MetaTrader 4", "MetaTrader 5", "Alpari Mobile"],
+      "account_types": {
+        "nano": {"min_dep": 1, "spread_eurusd": 2.0, "commission_per_lot": 0.0},
+        "standard_mt4": {"min_dep": 20, "spread_eurusd": 1.2, "commission_per_lot": 0.0},
+        "ecn_mt4": {"min_dep": 300, "spread_eurusd": 0.4, "commission_per_lot": 3.2},
+        "pro_ecn_mt4": {"min_dep": 500, "spread_eurusd": 0.1, "commission_per_lot": 3.2}
+      },
+      "average_spreads": {
+        "EURUSD": 0.4,
+        "GBPUSD": 0.7,
+        "USDJPY": 0.5,
+        "XAUUSD": 2.2,
+        "BTCUSD": 30.0
+      },
+      "swap_free": {
+        "available": true,
+        "duration_days": 30,
+        "conditions": "Islamic account available on Standard and ECN upon request"
+      },
+      "payment_methods": ["TopChange (TC Pay)", "Tether (TRC20)", "Cryptocurrencies", "WebMoney"],
+      "rial_deposit_fee": "0%",
+      "rial_withdrawal_speed_hours": "2-6",
+      "copy_trading": "Alpari PAMM Accounts (Pioneer in PAMM)",
+      "server_locations": ["London", "Amsterdam"],
+      "avg_ping_iran_ms": 125,
+      "rating_overall": 9.2,
+      "pros": [
+        "Over 26 years of continuous service to Iranian traders",
+        "Lowest entry barrier with Nano (Cent) accounts from $1",
+        "PAMM account investment pioneer with thousands of active managers",
+        "High liquidity and reliable execution"
+      ],
+      "cons": [
+        "Spreads on Nano and standard accounts are wider than competitors",
+        "Support response can be slow during high-volatility news events"
+      ]
+    },
+    {
+      "id": "litefinance",
+      "name": "LiteFinance (Formerly LiteForex)",
+      "established": 2005,
+      "regulation": "CySEC (EU arm), FSA (St. Vincent)",
+      "regulation_tier": "Tier-2 / Tier-3",
+      "iran_friendly": true,
+      "kyc_required_for_trade": true,
+      "accepts_national_id": true,
+      "min_deposit_usd": 50,
+      "max_leverage": "1:1000",
+      "platforms": ["MetaTrader 4", "MetaTrader 5", "LiteFinance Web Platform"],
+      "account_types": {
+        "classic": {"min_dep": 50, "spread_eurusd": 1.8, "commission_per_lot": 0.0},
+        "ecn": {"min_dep": 50, "spread_eurusd": 0.1, "commission_per_lot": 7.0}
+      },
+      "average_spreads": {
+        "EURUSD": 0.2,
+        "GBPUSD": 0.6,
+        "USDJPY": 0.3,
+        "XAUUSD": 1.9,
+        "BTCUSD": 22.0
+      },
+      "swap_free": {
+        "available": true,
+        "duration_days": 180,
+        "conditions": "True Islamic account with long-term swap-free status"
+      },
+      "payment_methods": ["TopChange", "Tether (TRC20)", "Direct Bank Transfer (P2P Rial)", "Perfect Money"],
+      "rial_deposit_fee": "0%",
+      "rial_withdrawal_speed_hours": "1-4",
+      "copy_trading": "Social Trading Platform (In-house Social Copy)",
+      "server_locations": ["Frankfurt", "London"],
+      "avg_ping_iran_ms": 115,
+      "rating_overall": 9.1,
+      "pros": [
+        "Industry-best Social Copy Trading platform built directly into web app",
+        "Low $50 entry for real raw ECN accounts",
+        "Generous 180-day swap-free Islamic account conditions",
+        "Modern and intuitive browser trading terminal"
+      ],
+      "cons": [
+        "ECN commission ($7/lot) is slightly higher than AMarkets or ForexChief",
+        "Mobile app occasionally experiences reconnection lag"
+      ]
+    },
+    {
+      "id": "forexchief",
+      "name": "ForexChief (xChief)",
+      "established": 2014,
+      "regulation": "VFSC (Vanuatu), Mwali International Services Authority",
+      "regulation_tier": "Tier-3",
+      "iran_friendly": true,
+      "kyc_required_for_trade": true,
+      "accepts_national_id": true,
+      "min_deposit_usd": 10,
+      "max_leverage": "1:1000",
+      "platforms": ["MetaTrader 4", "MetaTrader 5", "xChief App"],
+      "account_types": {
+        "directfx": {"min_dep": 10, "spread_eurusd": 0.3, "commission_per_lot": 3.0},
+        "classic": {"min_dep": 10, "spread_eurusd": 1.2, "commission_per_lot": 0.0},
+        "cent": {"min_dep": 1, "spread_eurusd": 1.5, "commission_per_lot": 0.0}
+      },
+      "average_spreads": {
+        "EURUSD": 0.3,
+        "GBPUSD": 0.5,
+        "USDJPY": 0.4,
+        "XAUUSD": 2.0,
+        "BTCUSD": 28.0
+      },
+      "swap_free": {
+        "available": true,
+        "duration_days": 7,
+        "conditions": "Available upon request with weekly rollover review"
+      },
+      "payment_methods": ["TopChange", "Tether (TRC20)", "Cryptocurrencies", "Local Exchange"],
+      "rial_deposit_fee": "0%",
+      "rial_withdrawal_speed_hours": "1-2",
+      "copy_trading": "PAMM and Copy Trading",
+      "server_locations": ["London (Equinix LD4)", "Singapore"],
+      "avg_ping_iran_ms": 105,
+      "rating_overall": 8.9,
+      "pros": [
+        "Lowest ECN commission in the market ($3 per round-turn lot)",
+        "$100 No-Deposit Welcome Bonus for new verified traders",
+        "Cent accounts available on MetaTrader 4 and 5",
+        "Direct connection to Equinix LD4 institutional matching engine"
+      ],
+      "cons": [
+        "Strict 7-day swap-free window before rollover fees apply",
+        "Brand recognition is newer than Alpari or Windsor"
+      ]
+    },
+    {
+      "id": "windsor",
+      "name": "Windsor Brokers",
+      "established": 1988,
+      "regulation": "CySEC (Cyprus), FSC (Belize), FSA (Seychelles), CMA (Kenya)",
+      "regulation_tier": "Tier-2 / Tier-3",
+      "iran_friendly": true,
+      "kyc_required_for_trade": true,
+      "accepts_national_id": true,
+      "min_deposit_usd": 50,
+      "max_leverage": "1:1000",
+      "platforms": ["MetaTrader 4", "Windsor Mobile App"],
+      "account_types": {
+        "prime": {"min_dep": 50, "spread_eurusd": 1.4, "commission_per_lot": 0.0},
+        "zero": {"min_dep": 1000, "spread_eurusd": 0.0, "commission_per_lot": 8.0}
+      },
+      "average_spreads": {
+        "EURUSD": 1.4,
+        "GBPUSD": 1.8,
+        "USDJPY": 1.5,
+        "XAUUSD": 3.0,
+        "BTCUSD": 35.0
+      },
+      "swap_free": {
+        "available": true,
+        "duration_days": 30,
+        "conditions": "Islamic accounts available for Muslim residents"
+      },
+      "payment_methods": ["ZGold", "Tether (TRC20)", "Credit/Debit Cards (Foreign)", "Wire Transfer"],
+      "rial_deposit_fee": "0%",
+      "rial_withdrawal_speed_hours": "3-8",
+      "copy_trading": "Windsor Copy Trading",
+      "server_locations": ["London", "Cyprus"],
+      "avg_ping_iran_ms": 130,
+      "rating_overall": 8.7,
+      "pros": [
+        "Oldest active broker in the region (Established 1988 - 38 years track record)",
+        "€5,000,000 excess civil liability insurance program",
+        "High institutional stability and fund segregation",
+        "$30 free registration bonus without initial deposit"
+      ],
+      "cons": [
+        "MetaTrader 5 is not supported (MT4 only)",
+        "Zero account requires high $1,000 minimum deposit"
+      ]
+    }
+  ]
+}

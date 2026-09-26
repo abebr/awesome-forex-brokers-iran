@@ -1,56 +1,97 @@
-# 📊 Awesome Forex Brokers for Iranian Traders & Spread Analysis Toolkit
+# 📊 Awesome Forex Brokers for Iranian Traders & Analysis Toolkit (2026 Edition)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python: 3.10+](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
+[![MQL5: Compatible](https://img.shields.io/badge/MQL5-MetaTrader_5-brightgreen.svg)](https://www.mql5.com/)
 [![Official Guide](https://img.shields.io/badge/Official_Guide-BestAmooz-crimson.svg)](https://bestamooz.com/best-forex-brokers/)
 
-A curated directory, trading cost calculation toolkit, and verified comparison matrix of reliable Forex brokers accepting Iranian residents with direct IRR (Rial) deposit & withdrawal methods.
+A comprehensive, developer-grade open-source toolkit and verified comparison matrix of reliable Forex brokers accepting Iranian residents, featuring direct Rial deposit & withdrawal channels, real raw ECN spreads, execution latency benchmarks, and MetaTrader 5 on-chart tracking scripts.
 
 ---
 
-## 📌 Comprehensive Reference & Full Broker Ratings
+## 📌 Authoritative Reference & Live Ratings
 
-For the live, regularly updated comparison table, regulatory verification, swap-free Islamic accounts, and detailed broker scoring, read the authoritative guide on BestAmooz:
+For the live, regularly updated comparison table, regulatory verification, user complaint tracking, and Islamic account swap-free policies, visit the cornerstone guide on BestAmooz:
 
-👉 **[بهترین بروکر فارکس برای ایرانیان (رتبه‌بندی و مقایسه کارگزاری‌ها)](https://bestamooz.com/best-forex-brokers/)**
-
-### Core Evaluation Criteria
-1. **Regulatory Compliance & Safety:** Tier-2 and Tier-3 licenses accepting Iranian KYC without account freezing risks.
-2. **Direct Rial Deposit & Withdrawal:** Fast, secure P2P and exchange channels without third-party commission gouging.
-3. **Execution Quality & Spreads:** Ultra-low raw ECN spreads on EURUSD, GBPUSD, and XAUUSD (Gold).
-4. **Islamic Accounts:** Transparent swap-free policies on swing and long-term positions.
-5. **Customer Support:** Responsive Persian-speaking support via live chat, Telegram, and ticket systems.
+👉 **[بهترین بروکر فارکس برای ایرانیان (رتبه‌بندی، مقایسه کارمزد و اعتبار کارگزاری‌ها در سال ۱۴۰۵)](https://bestamooz.com/best-forex-brokers/)**
 
 ---
 
-## 🛠️ Quick Spread & Cost Calculator
+## 🏆 Verified Broker Comparison Matrix
 
-Run the included open-source utility to evaluate total round-turn trading costs across major brokers:
+| Broker Name | Established | Regulatory Tier & Insurance | Min Deposit | Max Leverage | EURUSD Raw Spread | ECN Comm / Lot | Swap-Free Status | Rial Payment Channels | MetaTrader Support | Overall Score |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **[AMarkets](https://bestamooz.com/best-forex-brokers/)** | 2007 | Tier-3 + €20k Financial Commission | $100 | 1:3000 | **0.2 pips** | $5.0 | 14 Days | TopChange (0%), Direct Exchange, USDT | MT4, MT5 | **9.4 / 10** |
+| **[Alpari](https://bestamooz.com/best-forex-brokers/)** | 1998 | Tier-3 + FSC Mauritius (26y Track Record) | **$1 (Nano)** | 1:1000 | 0.4 pips | $3.2 | 30 Days | TopChange, USDT (TRC20), WebMoney | MT4, MT5 | **9.2 / 10** |
+| **[LiteFinance](https://bestamooz.com/best-forex-brokers/)** | 2005 | Tier-2 (CySEC EU) / Tier-3 | $50 | 1:1000 | **0.2 pips** | $7.0 | **180 Days** | TopChange, Direct P2P Rial, USDT | MT4, MT5 | **9.1 / 10** |
+| **[ForexChief (xChief)](https://bestamooz.com/best-forex-brokers/)** | 2014 | Tier-3 (VFSC Vanuatu) | $10 | 1:1000 | 0.3 pips | **$3.0** | 7 Days | TopChange, USDT, Crypto, P2P | MT4, MT5 | **8.9 / 10** |
+| **[Windsor Brokers](https://bestamooz.com/best-forex-brokers/)** | 1988 | Tier-2 (CySEC) + €5M Civil Liability | $50 | 1:1000 | 1.4 pips | $0.0 (Prime) | 30 Days | ZGold, USDT, Wire Transfer | MT4 Only | **8.7 / 10** |
+
+---
+
+## 🛠️ Included Developer & Trading Tools
+
+### 1. 🐍 `broker_audit.py` — Comparative Cost & Trading Style Analyzer
+An interactive CLI tool that calculates real monthly trading costs (spreads + commissions) based on your monthly traded lot size and style.
 
 ```bash
-python spread_calculator.py
+# Run comparative simulation
+python broker_audit.py
 ```
 
-### Sample Output:
+#### Sample Terminal Output:
 ```text
-=== EURUSD 1.0 Lot Round-Turn Cost Comparison ===
-[AMarkets (ECN)] Total Cost: $7.0 (Spread: $2.0 + Comm: $5.0)
-[Alpari (Pro ECN)] Total Cost: $7.2 (Spread: $4.0 + Comm: $3.2)
-[LiteFinance (Classic)] Total Cost: $14.0 (Spread: $14.0 + Comm: $0.0)
-[ForexChief (DirectFX)] Total Cost: $6.0 (Spread: $3.0 + Comm: $3.0)
+=== Monthly Cost Simulation: 20.0 Standard Lots on EURUSD (ECN) ===
+Broker                           | Spread   | Comm/Lot | Total Monthly | Rating
+---------------------------------+----------+----------+---------------+---------
+ForexChief (xChief)              | 0.3 pips | $3.0     | $120.0        | 8.9 / 10
+AMarkets                         | 0.2 pips | $5.0     | $140.0        | 9.4 / 10
+LiteFinance                      | 0.2 pips | $7.0     | $180.0        | 9.1 / 10
+Windsor Brokers                  | 1.4 pips | $0.0     | $280.0        | 8.7 / 10
 ```
 
 ---
 
-## 🇮🇷 راهنمای فارسی انتخاب بروکر معتبر فارکس
+### 2. 📈 `MT5_Spread_Latency_Tracker.mq5` — Real-Time MetaTrader 5 Monitor
+A production-ready MetaTrader 5 indicator that monitors live tick spreads, execution delays, and server ping on your chart:
+- **Real-Time On-Chart HUD:** Shows current spread, min/max spread spikes during news, and average spread in points and pips.
+- **High-Spread Alert:** Flashes on-chart warning when spread exceeds customizable threshold.
+- **CSV Data Logging:** Automatically logs live tick latency and spread to `MQL5/Files/` for statistical backtesting.
 
-انتخاب بروکر مطمئن، اولین و حیاتی‌ترین گام در معاملات بازارهای مالی بین‌المللی است. به دلیل محدودیت‌های بین‌المللی، معامله‌گران ایرانی باید کارگزاری‌هایی را انتخاب کنند که علاوه بر داشتن رگولیشن معتبر، خدمات ریالی بدون تاخیر و سرورهای باثبات روی متاتریدر ۴ و ۵ ارائه دهند.
-
-* برای مشاهده لیست کامل و نقد و بررسی تخصصی بروکرهای آلپاری (Alpari)، آمارکتس (AMarkets)، لایت فایننس (LiteFinance)، ویندزور (Windsor) و فارکس چیف (ForexChief)، به مقاله مرجع **[بهترین بروکر فارکس برای ایرانیان](https://bestamooz.com/best-forex-brokers/)** مراجعه فرمایید.
-* برای یادگیری سیستم‌های معاملاتی خودکار و الگوریتم تریدینگ، بخش **[آموزش‌های تخصصی ترید و بازارهای مالی بست‌آموز](https://bestamooz.com/product-category/trade-tutorials/)** را دنبال کنید.
+#### How to Install:
+1. Open your MetaTrader 5 terminal.
+2. Go to `File` → `Open Data Folder` → `MQL5` → `Indicators`.
+3. Copy `MT5_Spread_Latency_Tracker.mq5` into the directory.
+4. Restart MT5 or right-click `Indicators` in the Navigator window and click **Refresh**.
+5. Drag and drop onto any chart (e.g. `EURUSD` or `XAUUSD`).
 
 ---
 
-## 📄 License
-This project is open-source under the [MIT License](LICENSE).
-Maintained by BestAmooz Academy & Open-Source Contributors.
+### 3. 💾 `brokers_database.json` — Machine-Readable Specifications
+A structured, programmatically accessible JSON dataset containing exhaustive specifications for all Iranian-servicing brokers:
+- Minimum deposit and leverage tiers
+- Account types (Nano, Standard, Raw ECN, Pro ECN)
+- Server locations (Equinix LD4 London, Frankfurt, Amsterdam) and average ping from Iran
+- Swap-free terms, rollover fees, and inactivity policies
+
+---
+
+## 🇮🇷 راهنمای جامع فارسی انتخاب بروکر فارکس
+
+انتخاب بروکر مطمئن، مهم‌ترین تصمیم هر معامله‌گر در بازارهای مالی بین‌المللی است. یک اشتباه در انتخاب کارگزاری می‌تواند منجر به اسلیپیج‌های شدید در زمان اخبار، اسپردهای پنهان، تاخیر در برداشت وجه یا حتی مسدود شدن حساب به بهانه احراز هویت شود.
+
+### ۵ فاکتور حیاتی برای تریدرهای داخل ایران:
+1. **امنیت، سابقه و رگولیشن:** سابقه فعالیت مداوم و پشتیبانی بدون وقفه از کاربران ایرانی در کنار عضویت در نهادهایی مثل Financial Commission (با بیمه ۲۰,۰۰۰ یورویی برای هر مشتری).
+2. **واریز و برداشت ریالی مستقیم:** پشتیبانی رسمی از صرافی‌های معتبر مانند تاپ‌چنج (TopChange / TC Pay) با کارمزد صفر درصد یا پرداخت مستقیم تتر (USDT TRC20).
+3. **سرورهای معاملاتی با پینگ پایین:** استقرار سرورهای متاتریدر در مراکز داده اروپایی (مانند Equinix LD4 لندن یا فرانکفورت) با پینگ میانگین زیر ۱۲۰ میلی‌ثانیه از ایران.
+4. **حساب‌های اسلامی بدون سواپ (Swap-Free):** معافیت واقعی از بهره شبانه بدون اعمال کمیسیون‌های پنهان در پوزیشن‌های بلندمدت.
+5. **پشتیبانی فارسی‌زبان ۲۴ ساعته:** حضور تیم پشتیبانی مسلط به زبان فارسی در چت آنلاین و تلگرام جهت رفع سریع چالش‌های واریز و برداشت.
+
+* برای مطالعه نقد و بررسی تخصصی، تصاویر پنل کاربری و مقایسه جامع، مقاله مرجع **[بهترین بروکر فارکس برای ایرانیان](https://bestamooz.com/best-forex-brokers/)** را مطالعه فرمایید.
+* برای دسترسی به دوره‌های حرفه‌ای پرایس‌اکشن، ساخت ربات‌های معامله‌گر و سیستم‌های تحلیل تکنیکال، به بخش **[آموزش‌های تخصصی ترید و بازارهای مالی بست‌آموز](https://bestamooz.com/product-category/trade-tutorials/)** مراجعه کنید.
+
+---
+
+## 🤝 Contributing & License
+Contributions, broker specification updates, and bug reports are welcome via Pull Requests.
+Distributed under the **MIT License**. Copyright (c) 2026 BestAmooz Academy & Open-Source Contributors.
